@@ -1,0 +1,79 @@
+#new_game {
+  background-color: blue;
+  color: white;
+  border-radius: 3rem;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.contain_game {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contain_game input {
+  margin-top: 1rem;
+  width: 8rem;
+  height: 2rem;
+}
+.contain_player {
+  width: 20rem;
+  height: 30rem;
+  text-align: center;
+}
+
+.contain_player > p {
+  font-size: 5rem;
+  margin-top: 0;
+  margin-bottom: 8rem;
+}
+
+.contain_player div {
+  border: 1px solid black;
+  width: 10rem;
+  height: 6rem;
+  margin: auto;
+  background-color: red;
+}
+.contain_player div p {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.contain_dice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 20rem;
+  height: 30rem;
+}
+
+.contain_dice img {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid wheat;
+}
+.contain_dice button {
+  border: none;
+  cursor: pointer;
+  font-size: larger;
+  background-color: aquamarine;
+}
+
+.contain_hold {
+  text-align: center;
+}
+.contain_hold button {
+  margin-top: 2rem;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  background-color: brown;
+}
+
+.detailes {
+  text-align: center;
+}

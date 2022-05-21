@@ -19,7 +19,7 @@ class Dice extends React.Component {
       const dice2 = Math.floor(Math.random() * arrDice.length);
       this.setState({ firstDice: arrDice[dice1] });
       this.setState({ secondDice: arrDice[dice2] });
-      this.props.sendScore(dice1 + 1 + dice2 + 1);
+      this.props.sendScore(dice1 + 1, dice2 + 1);
     }
   };
   render() {

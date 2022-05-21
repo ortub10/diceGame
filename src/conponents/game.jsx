@@ -14,16 +14,16 @@ class Game extends React.Component {
     isGameOver: false,
     scoreToWin: 100,
   };
-  getScore = (score) => {
+  getScore = (score1, score2) => {
     if (!this.state.isGameOver) {
       this.setState({ firstRoll: true });
       if (this.state.turn === 1) {
         this.setState((prevState) => {
-          return { currentScore1: prevState.currentScore1 + score };
+          return { currentScore1: prevState.currentScore1 + score1 + score2 };
         });
       } else if (this.state.turn === 2) {
         this.setState((prevState) => {
-          return { currentScore2: prevState.currentScore2 + score };
+          return { currentScore2: prevState.currentScore2 + score1 + score2 };
         });
       }
     }
